@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7794ed0901c4d0f85a9b04a677f1d94, type: 3}
+  m_Name: ControlBoxSettings
+  m_EditorClassIdentifier: 
+  SmoothSpeed: 7
+  Constraint: 2
+  Layer: 0
+  ScaleOffset: 0.05
+  IsTrigger: 1
+  MinScale: 0.5
+  MaxScale: 1.5
+  HoverColor: {r: 3.564161, g: 0.857416, b: 1.8323066, a: 1}
+  SelectedColor: {r: 7.128322, g: 1.7167686, b: 3.6947846, a: 1}
+  DisplayType: 1
+  NormalState:
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 0.05
+  HoverState:
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 0.08
+  SelectedState:
+    color: {r: 1, g: 1, b: 1, a: 1}
+    size: 0.08

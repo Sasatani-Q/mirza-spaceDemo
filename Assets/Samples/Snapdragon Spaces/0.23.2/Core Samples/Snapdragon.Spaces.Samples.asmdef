@@ -1,0 +1,42 @@
+{
+    "name": "Snapdragon.Spaces.Samples",
+    "rootNamespace": "",
+    "references": [
+        "Unity.XR.Interaction.Toolkit",
+        "Unity.InputSystem",
+        "QCHT.Interactions",
+        "Unity.XR.OpenXR",
+        "Unity.XR.ARFoundation",
+        "Snapdragon.Spaces.Runtime",
+        "Unity.XR.ARSubsystems",
+        "Unity.XR.Management"
+    ],
+    "includePlatforms": [
+        "Android",
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.qualcomm.qcht.unity.interactions",
+            "expression": "4.0.0-pre.16",
+            "define": "QCHT_UNITY_CORE_4_0_0_PRE_16_OR_NEWER"
+        },
+        {
+            "name": "com.qualcomm.qcht.unity.interactions",
+            "expression": "4.0.0-pre.0",
+            "define": "QCHT_UNITY_CORE"
+        },
+        {
+            "name": "com.qualcomm.qcht.unity.interactions",
+            "expression": "4.1.5",
+            "define": "QCHT_UNITY_CORE_4_1_5_OR_NEWER"
+        }
+    ],
+    "noEngineReferences": false
+}

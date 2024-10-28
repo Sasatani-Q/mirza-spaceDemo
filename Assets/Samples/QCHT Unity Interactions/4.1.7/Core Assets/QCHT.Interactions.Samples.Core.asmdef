@@ -1,0 +1,21 @@
+{
+    "name": "QCHT.Interactions.Samples.Core",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b45beccc4e8e141cb8f9e6b2a8da6b3f",
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:fe685ec1767f73d42b749ea8045bfe43"
+    ],
+    "includePlatforms": [
+        "Android",
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

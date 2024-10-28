@@ -1,0 +1,3668 @@
+{
+    "name": "Default QCHT Input Actions",
+    "maps": [
+        {
+            "name": "HMD",
+            "id": "87e21024-42b2-44a9-ab40-4972788369bb",
+            "actions": [
+                {
+                    "name": "Is Tracked",
+                    "type": "Button",
+                    "id": "e18abdc5-ec72-4423-8adb-9e4997c70ff0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Tracking State",
+                    "type": "Value",
+                    "id": "625dfb05-71ba-449f-ae9b-9c927ba543fc",
+                    "expectedControlType": "Integer",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "85ced470-f417-4531-b448-04cbaf2f96e6",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotation",
+                    "type": "Value",
+                    "id": "8966ec37-eda3-49de-910c-ecb6e5377693",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "210dd643-f8e8-4ef4-a1ab-7ceb687b62c6",
+                    "path": "<XRHMD>/isTracked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Is Tracked",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Vector 3 Fallback",
+                    "id": "6b69cf9b-f405-47cf-99b4-c26db24aeeb9",
+                    "path": "Vector3Fallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "172f926e-0d09-4015-b12c-aa65a1a53670",
+                    "path": "<XRHMD>/centerEyePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "d56b7fd8-638e-46ea-bd6e-e24127665c2b",
+                    "path": "<XRHMD>/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Quaternion Fallback",
+                    "id": "23871971-c80e-43a0-a29c-b7767b495ae8",
+                    "path": "QuaternionFallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "c5e151c7-ca75-42a3-930e-2d80d26560da",
+                    "path": "<XRHMD>/centerEyeRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "449b1458-b9f7-440c-a881-e73461075a16",
+                    "path": "<XRHMD>/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "c0658d46-a72a-49cb-8f22-31a44492f8ba",
+                    "path": "<XRHMD>/trackingState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tracking State",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "LeftHand",
+            "id": "f19181dd-30a4-464f-9ee1-9511cf4bbd76",
+            "actions": [
+                {
+                    "name": "Is Tracked",
+                    "type": "Button",
+                    "id": "23f533f6-ef62-45cf-b54e-d3cf895d7e58",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Tracking State",
+                    "type": "Value",
+                    "id": "04df7d27-fba7-405d-bc03-a5de5cbdf133",
+                    "expectedControlType": "Integer",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Device",
+                    "type": "Value",
+                    "id": "f8349da9-6118-4f49-a2c5-09271c29df18",
+                    "expectedControlType": "Pose",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Device Position",
+                    "type": "Value",
+                    "id": "04468475-0e80-481e-974c-7053e6a290b6",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Device Rotation",
+                    "type": "Value",
+                    "id": "e106623a-d688-494d-ac95-8fc8b62c46c8",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Pointer",
+                    "type": "Value",
+                    "id": "cc94b03b-941e-456e-a888-9dbefc5eb8c5",
+                    "expectedControlType": "Pose",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Pointer Position",
+                    "type": "Value",
+                    "id": "d8027565-dea0-4b3c-866e-0a838008fe03",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Pointer Rotation",
+                    "type": "Value",
+                    "id": "f1b8527a-e8ae-434d-a412-9f9740169558",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Poke",
+                    "type": "Value",
+                    "id": "fb96a56b-1a53-47b5-917e-325a38d1df01",
+                    "expectedControlType": "Pose",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Poke Position",
+                    "type": "Value",
+                    "id": "8e52e4cd-0f19-450c-88ff-d89d49c7474d",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Poke Rotation",
+                    "type": "Value",
+                    "id": "a7e3191f-f177-4e6f-ae53-f3e51e2212e9",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Pinch",
+                    "type": "Value",
+                    "id": "a4b5f94d-7e20-4b4e-9d20-257bbdee849c",
+                    "expectedControlType": "Pose",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Pinch Position",
+                    "type": "Value",
+                    "id": "ad1c3a6e-f12d-4e46-b64f-d3f76c7e7936",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Pinch Rotation",
+                    "type": "Value",
+                    "id": "347d9cbc-e161-4af1-bb2d-b6cac49b1725",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Grasp",
+                    "type": "Value",
+                    "id": "e6f4363a-9015-4bd7-b41b-884abaf599e5",
+                    "expectedControlType": "Pose",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Grasp Position",
+                    "type": "Value",
+                    "id": "6e2fb97f-8d85-436a-8390-94ffa287d724",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Grasp Rotation",
+                    "type": "Value",
+                    "id": "796055e9-944c-4905-8692-22a722b8053f",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Palm",
+                    "type": "Value",
+                    "id": "3003cc0f-bbe0-4b7e-8db1-f162f79b12f1",
+                    "expectedControlType": "Pose",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Palm Position",
+                    "type": "Value",
+                    "id": "8967280e-294c-44e6-bec3-a8bd2a8c7ecd",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Palm Rotation",
+                    "type": "Value",
+                    "id": "4ff45cf0-58ea-4666-8f6c-b6ec6f7e0a9b",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Flip Ratio",
+                    "type": "Value",
+                    "id": "59148a46-52c8-40f1-8711-f2694083e95d",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "Vector 3 Fallback",
+                    "id": "1f2b626b-29bd-4f6d-a3a1-607c0dfdfb92",
+                    "path": "Vector3Fallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Device Position",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "First",
+                    "id": "bef46ef0-5f04-4ca6-8502-49e5b485d1c3",
+                    "path": "<HandTrackingDevice>{LeftHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Device Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Second",
+                    "id": "f1f8802a-0a96-42d5-917c-af28cf7ee63d",
+                    "path": "<XRController>{LeftHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Device Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Quaternion Fallback",
+                    "id": "839df0d8-532d-485d-945c-f9b97f6c6d2e",
+                    "path": "QuaternionFallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Device Rotation",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "5ae4bd47-f216-4dab-9a3b-13c7dbd51331",
+                    "path": "<HandTrackingDevice>{LeftHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Device Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "8107889e-3854-4ded-8f2a-724895253eaa",
+                    "path": "<XRController>{LeftHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Device Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Vector 3 Fallback",
+                    "id": "00164141-8f69-4410-a654-a3d2a0568eff",
+                    "path": "Vector3Fallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer Position",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "6f9de853-791b-433c-b413-d8ba78aaed16",
+                    "path": "<HandTrackingDevice>{LeftHand}/pointerPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "c38a6ccd-b0e0-4648-a7c2-c25fb3bf3643",
+                    "path": "<XRController>{LeftHand}/pointerPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "third",
+                    "id": "a65c1cfa-5a05-4451-a999-0f33877798c7",
+                    "path": "<XRController>{LeftHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Quaternion Fallback",
+                    "id": "603b8441-45cd-4dfc-8ee5-2f85059e313f",
+                    "path": "QuaternionFallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer Rotation",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "5f5d57bc-4645-47df-9984-87a9b5b9b5ce",
+                    "path": "<HandTrackingDevice>{LeftHand}/pointerRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "cae65c76-e30e-489f-a0e6-efeed820dc5f",
+                    "path": "<XRController>{LeftHand}/pointerRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "third",
+                    "id": "f00c2631-88d6-4f8d-8b88-95f58a42db94",
+                    "path": "<XRController>{LeftHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Vector 3 Fallback",
+                    "id": "34fc3773-b45b-4412-8cbb-e0135ade2a65",
+                    "path": "Vector3Fallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Poke Position",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "368b400b-dfe6-49c2-81af-be993ce0ef36",
+                    "path": "<HandTrackingDevice>{LeftHand}/pokePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Poke Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "3763323d-9569-4943-ab1d-8785e457b04b",
+                    "path": "<XRController>{LeftHand}/pokePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Poke Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "third",
+                    "id": "a5f36b59-3650-4566-b6c0-80136a73f955",
+                    "path": "<XRController>{LeftHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Poke Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Quaternion Fallback",
+                    "id": "0e277f04-db6f-473c-b332-f6d0052b5a69",
+                    "path": "QuaternionFallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Poke Rotation",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "3538ede4-c133-4ddb-9c9e-ee06fabb6e0e",
+                    "path": "<HandTrackingDevice>{LeftHand}/pokeRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Poke Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "063b4798-b15d-4443-abe3-66d55ce2d0fa",
+                    "path": "<XRController>{LeftHand}/pokeRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Poke Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "third",
+                    "id": "0b36db5e-e722-4049-9896-10240243012d",
+                    "path": "<XRController>{LeftHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Poke Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "2ae9c8a4-0506-4b5e-9a67-44b3756babd0",
+                    "path": "<HandTrackingDevice>{LeftHand}/trackingState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tracking State",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "121835d2-b1ff-4031-bff4-864502f824fe",
+                    "path": "<XRController>{LeftHand}/trackingState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tracking State",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "80cb62d9-ffca-4bf5-b5b0-108d3b259ce8",
+                    "path": "<HandTrackingDevice>{LeftHand}/isTracked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Is Tracked",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3e1306f7-78a0-4540-addb-fc9929e9992c",
+                    "path": "<XRController>{LeftHand}/isTracked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Is Tracked",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f1cd9a80-d169-4a38-9cba-f86e72e1b201",
+                    "path": "<XRController>{LeftHand}/flipRatio",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Flip Ratio",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Quaternion Fallback",
+                    "id": "db7e2e8f-5d22-41e9-9e17-f807922d68a5",
+                    "path": "QuaternionFallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pinch Rotation",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "3a2cc9d0-35ba-44ea-a538-779627955a0d",
+                    "path": "<HandTrackingDevice>{LeftHand}/pinchRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pinch Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "45a450c1-5d8b-4854-a1ee-4ff2ce838d79",
+                    "path": "<XRController>{LeftHand}/pinchRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pinch Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "third",
+                    "id": "c3d49111-28a8-4f70-ae02-9b76a2327055",
+                    "path": "<XRController>{LeftHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pinch Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Vector 3 Fallback",
+                    "id": "ec78a4df-b2bb-4eb4-bb06-6f856f9d9a9a",
+                    "path": "Vector3Fallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pinch Position",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "f74abf2e-2d7c-43c5-96ca-9504d5f90099",
+                    "path": "<HandTrackingDevice>{LeftHand}/pinchPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pinch Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "496dc4ed-4e80-4377-a9f8-1360cefa0aad",
+                    "path": "<XRController>{LeftHand}/pinchPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pinch Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "third",
+                    "id": "97ac7890-b625-4706-bed9-9e81bf5a2241",
+                    "path": "<XRController>{LeftHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pinch Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Quaternion Fallback",
+                    "id": "fbdf54b3-240b-4d24-917f-5a2ecd1f2368",
+                    "path": "QuaternionFallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Rotation",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "c8b2fd41-e951-461e-8fbe-99fd89d76ccf",
+                    "path": "<HandTrackingDevice>{LeftHand}/graspRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "dacd572e-7438-4bb6-bdc6-eefa1810d5b3",
+                    "path": "<XRController>{LeftHand}/graspRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "third",
+                    "id": "d8913362-c0f2-4887-a7fa-16b909083831",
+                    "path": "<XRController>{LeftHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Vector 3 Fallback",
+                    "id": "f351823b-2217-4e60-b7e2-845947a0f4b6",
+                    "path": "Vector3Fallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Position",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "66842905-7195-4f02-9b8a-8fc4ee5b5772",
+                    "path": "<HandTrackingDevice>{LeftHand}/graspPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "dbebe126-694b-4e9c-8d68-4cf2c084a9a5",
+                    "path": "<XRController>{LeftHand}/graspPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "third",
+                    "id": "57638bc7-4127-41b1-b0fb-4ec4d27e9bc8",
+                    "path": "<XRController>{LeftHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Quaternion Fallback",
+                    "id": "3f7163fa-4a63-4f73-9321-16e5e06851e6",
+                    "path": "QuaternionFallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Palm Rotation",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "43a21808-6ca2-48ab-baa3-9f8f06cdebcb",
+                    "path": "<HandTrackingDevice>{LeftHand}/graspRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Palm Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "c862af09-f72d-4b31-a57f-8eb183d7881b",
+                    "path": "<PalmPose>{LeftHand}/palmRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Palm Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "third",
+                    "id": "cf618997-dee3-4778-9267-ad3bf196bc76",
+                    "path": "<XRController>{LeftHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Palm Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Vector 3 Fallback",
+                    "id": "415c24db-733b-4a54-9858-c65fcef94bab",
+                    "path": "Vector3Fallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Palm Position",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "b191c240-205f-443b-a4c5-e3d0e1ae5269",
+                    "path": "<HandTrackingDevice>{LeftHand}/graspPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Palm Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "ff06d766-d269-4bd1-832d-53c5549bc49a",
+                    "path": "<PalmPose>{LeftHand}/palmPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Palm Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "third",
+                    "id": "6588035d-29db-4967-9912-95a380ba0de3",
+                    "path": "<XRController>{LeftHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Palm Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "ad180e58-1c75-4948-833b-5f4600fb20b1",
+                    "path": "<XRController>{LeftHand}/device",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Device",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "facdce1e-4989-472f-829b-f71551ec2bc1",
+                    "path": "<XRController>{LeftHand}/pointer",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1e7ecfc9-0f83-442a-8c7c-1bfbfe49ae47",
+                    "path": "<XRController>{LeftHand}/pokePose",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Poke",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "140da1ad-57b6-4930-9089-e82927be115b",
+                    "path": "<XRController>{LeftHand}/pinchPose",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pinch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5c5f1938-d94f-4e2b-a9cc-7ae2bb11f800",
+                    "path": "<XRController>{LeftHand}/devicePose",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "842e657e-b6c5-4b35-b4a6-c17ced82c234",
+                    "path": "<PalmPose>{LeftHand}/pose",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Palm",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "LeftHand Input",
+            "id": "9040d10a-3d34-4a14-82a3-f06d3097e418",
+            "actions": [
+                {
+                    "name": "Select",
+                    "type": "Button",
+                    "id": "afa84178-b297-40ab-aa09-694f44d81454",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Select Value",
+                    "type": "Value",
+                    "id": "3f2f9cf9-1ae8-4fa4-8f42-526b57cef0d7",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Activate",
+                    "type": "Button",
+                    "id": "8b84f2fa-8ce0-4014-abeb-f6350e4a6793",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Activate Value",
+                    "type": "Button",
+                    "id": "449ce638-48c1-456e-a40d-10aa36369d4a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "UI Press",
+                    "type": "Button",
+                    "id": "c875d5ff-e182-476b-8121-bdbcf850ef31",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "UI Press Value",
+                    "type": "Value",
+                    "id": "6987449a-3434-4251-b8f5-93342f971cf8",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "UI Scroll",
+                    "type": "Value",
+                    "id": "47ef2762-70bd-492c-8887-7ed17d2c4ee5",
+                    "expectedControlType": "Vector2",
+                    "processors": "InvertVector2(invertY=false)",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotate Anchor",
+                    "type": "Value",
+                    "id": "dc3b890e-caa0-45f2-9b22-b4ce18eb242e",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Translate Anchor",
+                    "type": "Value",
+                    "id": "2a835fdd-c7af-4bbe-89fd-a1be3d1a9a83",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Grasp",
+                    "type": "Button",
+                    "id": "64a1520a-3b1a-4155-b96c-e8896de7f548",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Grasp Value",
+                    "type": "Value",
+                    "id": "19e1901c-c149-4cf7-8d2d-817e425513f3",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Haptic Device",
+                    "type": "PassThrough",
+                    "id": "e0be7cbc-a500-4770-81ad-605777efc493",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7e05237b-c52a-41b9-bf08-1061f6369085",
+                    "path": "<HandTrackingDevice>{LeftHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3f216438-a493-4c51-9031-f51bcf0f4c97",
+                    "path": "<XRController>{LeftHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3739aeb8-dd3e-45b5-8fae-1fea03653622",
+                    "path": "<XRController>{LeftHand}/selectPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6e4301f4-bf78-42c7-bb5f-28152a521759",
+                    "path": "<HandInteraction>{LeftHand}/pinchValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fd2bf466-2521-4503-981b-1064a15a11fa",
+                    "path": "<XRController>{LeftHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "af506eb9-a6dc-4694-85cc-e53d4d4ecf7a",
+                    "path": "<XRController>{LeftHand}/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "47afe5f4-e0f8-4338-a55e-88389cec3a06",
+                    "path": "<HandInteraction>{LeftHand}/pinchValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f518feb7-a213-4bda-8fc0-64f3b83711d3",
+                    "path": "<XRController>{LeftHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Activate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7508fd63-061c-4450-a059-674568ee7fc2",
+                    "path": "<XRController>{LeftHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Activate Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "17ddd85f-0039-4fb4-abff-17dd7b91f7bc",
+                    "path": "<HandTrackingDevice>{LeftHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UI Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1dde78ec-160e-4d91-9ea2-bf61c8d21d3e",
+                    "path": "<XRController>{LeftHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UI Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e3849bb3-d7ad-46cc-826f-77be3ee0a884",
+                    "path": "<XRController>{LeftHand}/selectPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UI Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0a89941b-ab5c-49d8-b949-ecd6bd425fd9",
+                    "path": "<XRController>{LeftHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UI Press Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c09982a8-7485-4934-b0d3-d5accac6df06",
+                    "path": "<XRController>{LeftHand}/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UI Press Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "834c5060-ffe4-4976-b189-adf126151022",
+                    "path": "<XRController>{LeftHand}/Primary2DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UI Scroll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "133a05a7-cb9e-4666-8597-045ba88b481f",
+                    "path": "<XRController>{LeftHand}/Primary2DAxis",
+                    "interactions": "",
+                    "processors": "ScaleVector2(y=0),StickDeadzone",
+                    "groups": "",
+                    "action": "Rotate Anchor",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "71e023c3-166c-4413-ab6f-ca7b86a009b0",
+                    "path": "<XRController>{LeftHand}/Primary2DAxis",
+                    "interactions": "",
+                    "processors": "ScaleVector2(x=0),StickDeadzone",
+                    "groups": "",
+                    "action": "Translate Anchor",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d7213121-ed0f-44d1-98c4-8c7f5df72987",
+                    "path": "<HandTrackingDevice>{LeftHand}/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fbcc1a2b-ab1a-4485-b425-0619fadb6916",
+                    "path": "<XRController>{LeftHand}/squeeze",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3f0ade3e-0ef1-46c5-855f-84554ecef3dc",
+                    "path": "<XRController>{LeftHand}/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "673aea51-495f-4fe9-b2c8-5781e096c6a2",
+                    "path": "<HandInteraction>{LeftHand}/graspValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "28566564-414c-46b7-bb8a-236381583d37",
+                    "path": "<HandTrackingDevice>{LeftHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "950f74f5-fab8-49ef-afc3-6076076a746f",
+                    "path": "<XRController>{LeftHand}/squeezePressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "52a7bdf3-1ea7-4204-ba16-13e5e9654492",
+                    "path": "<XRController>{LeftHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e3d5abee-129a-492a-9020-005f7826615a",
+                    "path": "<HandInteraction>{LeftHand}/graspValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "229b5e61-7b52-41f0-baa2-059ea323e852",
+                    "path": "<XRController>{LeftHand}/*",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Haptic Device",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a83311ba-4d22-46f6-8467-05f6c5544225",
+                    "path": "<HandInteraction>{LeftHand}/pinchValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Activate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b09c04cb-81ce-4b03-b18f-2f0fbba67c76",
+                    "path": "<HandInteraction>{LeftHand}/pinchValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Activate Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3f6f495c-cd71-417f-ac24-9331285a1535",
+                    "path": "<HandInteraction>{LeftHand}/pinchValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UI Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ed709330-854c-4187-877e-60c5108a6fc2",
+                    "path": "<HandInteraction>{LeftHand}/pinchValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UI Press Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "RightHand",
+            "id": "a0f9aacf-ac57-45fc-acfe-ebcb0157ff66",
+            "actions": [
+                {
+                    "name": "Is Tracked",
+                    "type": "Button",
+                    "id": "25c60e77-e0d1-4f66-a266-be81ac244072",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Tracking State",
+                    "type": "Value",
+                    "id": "e387d913-fcf1-472b-a999-f0a444fe1db0",
+                    "expectedControlType": "Integer",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Device",
+                    "type": "Value",
+                    "id": "20df58df-7d2c-4ab5-a201-c1931203fe47",
+                    "expectedControlType": "Pose",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Device Position",
+                    "type": "Value",
+                    "id": "7a9d8f12-a3ae-4816-be93-98fd0b6911dd",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Device Rotation",
+                    "type": "Value",
+                    "id": "047f08d7-61e4-4b58-b705-49b3a3afc864",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Pointer",
+                    "type": "Value",
+                    "id": "6367d604-924e-4cba-a909-2ee9984cdacd",
+                    "expectedControlType": "Pose",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Pointer Position",
+                    "type": "Value",
+                    "id": "079d8564-82e9-4ce9-9d98-b039d478ca88",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Pointer Rotation",
+                    "type": "Value",
+                    "id": "d96c64e2-50b9-4d28-a447-3580a9c051c3",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Poke",
+                    "type": "Value",
+                    "id": "d4df7a3e-5788-4589-8b82-7bbb484b6a34",
+                    "expectedControlType": "Pose",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Poke Position",
+                    "type": "Value",
+                    "id": "b9635ad1-c4d5-436b-ad9a-45d32fc46bcb",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Poke Rotation",
+                    "type": "Value",
+                    "id": "2d7ca46e-bfa0-46d5-b754-c7f6f26316de",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Pinch",
+                    "type": "Value",
+                    "id": "174923eb-2e6d-45ab-bd7c-ff6a8b057c9e",
+                    "expectedControlType": "Pose",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Pinch Position",
+                    "type": "Value",
+                    "id": "89e3b4b1-d281-40cd-986b-11eabf465a43",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Pinch Rotation",
+                    "type": "Value",
+                    "id": "97fdae08-9c57-4f71-8aa2-0f6068b4cc6c",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Grasp",
+                    "type": "Value",
+                    "id": "41996717-8117-4936-8fc8-a6007e5370cd",
+                    "expectedControlType": "Pose",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Grasp Position",
+                    "type": "Value",
+                    "id": "f10f2303-4215-4755-887b-4bd7273f09d2",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Grasp Rotation",
+                    "type": "Value",
+                    "id": "e77774ec-1e80-4a75-936e-58498056efa8",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Palm",
+                    "type": "Value",
+                    "id": "4899fc28-4b1e-4f3d-941f-4962a6cf089d",
+                    "expectedControlType": "Pose",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Palm Position",
+                    "type": "Value",
+                    "id": "6109feee-9b36-43a5-9b49-ad491a747861",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Palm Rotation",
+                    "type": "Value",
+                    "id": "c441d8fc-7b8a-4816-bc50-1b50531c6eb8",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Flip Ratio",
+                    "type": "Value",
+                    "id": "21c39736-cd87-4787-9e95-3e8f6bee10ed",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "Vector 3 Fallback",
+                    "id": "68e4a236-5743-4a49-bdac-6be7ba3b6ad8",
+                    "path": "Vector3Fallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Device Position",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "First",
+                    "id": "b9841f37-accc-495c-9720-3ad73eea881e",
+                    "path": "<HandTrackingDevice>{RightHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Device Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Second",
+                    "id": "b6637aaf-e7d5-442f-8d4f-ce3030b0b4fd",
+                    "path": "<XRController>{RightHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Device Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Quaternion Fallback",
+                    "id": "20459da1-6110-4630-8671-9a2db44c19a9",
+                    "path": "QuaternionFallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Device Rotation",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "0d8ce8c9-3aff-4510-9e6c-05847ab34e9e",
+                    "path": "<HandTrackingDevice>{RightHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Device Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "6bca20a0-af0d-4103-9a7f-7a10e723d55f",
+                    "path": "<XRController>{RightHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Device Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Vector 3 Fallback",
+                    "id": "c1b04975-3600-467b-9f68-cab6154ca2d0",
+                    "path": "Vector3Fallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer Position",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "04479dbc-cc83-4caa-9196-6d16a7af0443",
+                    "path": "<HandTrackingDevice>{RightHand}/pointerPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "0814b467-a8c3-4649-9555-7415cce28100",
+                    "path": "<XRController>{RightHand}/pointerPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "third",
+                    "id": "d669078e-4465-4bf7-af66-33559f165293",
+                    "path": "<XRController>{RightHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Quaternion Fallback",
+                    "id": "30c2c14f-8cb0-4d32-b1cb-eaf1c56daa61",
+                    "path": "QuaternionFallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer Rotation",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "9e1b2017-9fdb-47da-ae19-b8e0d6584388",
+                    "path": "<HandTrackingDevice>{RightHand}/pointerRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "041c1c1e-8478-458d-af71-24c12977039d",
+                    "path": "<XRController>{RightHand}/pointerRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "third",
+                    "id": "0a926f7c-5ac0-4c2b-bf91-d55e5a9b6898",
+                    "path": "<XRController>{RightHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Vector 3 Fallback",
+                    "id": "d6761cac-161f-45c3-a645-ae5a531a15cd",
+                    "path": "Vector3Fallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Poke Position",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "1bf285a0-ec0c-464e-b5b8-e149f10bb26b",
+                    "path": "<HandTrackingDevice>{RightHand}/pokePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Poke Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "7ae9c0ed-0763-445b-a9aa-11c500d6d82c",
+                    "path": "<XRController>{RightHand}/pokePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Poke Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "third",
+                    "id": "073777ce-86eb-4313-8832-03bd55cf8d48",
+                    "path": "<XRController>{RightHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Poke Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Quaternion Fallback",
+                    "id": "e5d06287-9db8-44a3-8d30-2177d2d28963",
+                    "path": "QuaternionFallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Poke Rotation",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "fbdfbda1-8c92-49c0-8232-ddd3095ff283",
+                    "path": "<HandTrackingDevice>{RightHand}/pokeRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Poke Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "61034bee-6297-43a9-a1fe-3721d63b06fc",
+                    "path": "<XRController>{RightHand}/pokeRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Poke Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "third",
+                    "id": "7921eb41-652a-430f-bb27-e6f8c0041331",
+                    "path": "<XRController>{RightHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Poke Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "e696393e-e8cc-4fa2-8daa-da04e65650ed",
+                    "path": "<HandTrackingDevice>{RightHand}/trackingState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tracking State",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "76574e1b-3ae3-4df5-8f07-d8dbd8e0e119",
+                    "path": "<XRController>{RightHand}/trackingState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tracking State",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "26de8262-7b4a-4fff-9707-d031b8b02673",
+                    "path": "<HandTrackingDevice>{RightHand}/isTracked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Is Tracked",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6599a19d-6f9c-4eda-ac79-7759fed915e2",
+                    "path": "<XRController>{RightHand}/isTracked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Is Tracked",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4484a42c-5f76-432e-be4f-58c0f7b21831",
+                    "path": "<XRController>{RightHand}/flipRatio",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Flip Ratio",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Vector 3 Fallback",
+                    "id": "dcbda8ca-dec5-4aae-b476-9551b4685c76",
+                    "path": "Vector3Fallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pinch Position",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "69ecf140-99d9-41d9-8740-d73bf9638916",
+                    "path": "<HandTrackingDevice>{RightHand}/pinchPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pinch Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "c12d987e-24cc-4e6e-b9a6-c339a427ca72",
+                    "path": "<XRController>{RightHand}/pinchPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pinch Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "third",
+                    "id": "de951f1f-588d-495c-99cf-5bac8580c21c",
+                    "path": "<XRController>{RightHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pinch Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Quaternion Fallback",
+                    "id": "3f9faaf1-1143-41ee-ab86-5c31db974a2a",
+                    "path": "QuaternionFallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pinch Rotation",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "a6214c33-af0b-42bb-aab6-c2124375bc7f",
+                    "path": "<HandTrackingDevice>{RightHand}/pinchRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pinch Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "33a5ac1b-d547-4d12-9e54-0f454e9ad043",
+                    "path": "<XRController>{RightHand}/pinchRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pinch Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "third",
+                    "id": "e243bfef-c29d-46db-945a-5d159bc54229",
+                    "path": "<XRController>{RightHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pinch Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Quaternion Fallback",
+                    "id": "5534ac28-dbc5-4b03-8bff-51530931728b",
+                    "path": "QuaternionFallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Rotation",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "9ea6d117-c301-4d14-8e54-082c8ae89e08",
+                    "path": "<HandTrackingDevice>{RightHand}/graspRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "77c99f5c-ff61-4b8c-8992-cbd863a441ab",
+                    "path": "<XRController>{RightHand}/graspRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "third",
+                    "id": "1061effa-4e42-42f7-b9bb-bac7d7b26b88",
+                    "path": "<XRController>{RightHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Vector 3 Fallback",
+                    "id": "1bd751be-0e9c-49e6-ab78-3ea18a721e36",
+                    "path": "Vector3Fallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Position",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "1ca3b0b3-07ad-47b4-86da-a69d2ccbd278",
+                    "path": "<HandTrackingDevice>{RightHand}/graspPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "79fb1285-d5e3-49d5-88b0-74d264eef362",
+                    "path": "<XRController>{RightHand}/graspPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "third",
+                    "id": "cc27b6ca-c316-4e0d-a92a-acce8c0d5583",
+                    "path": "<XRController>{RightHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Quaternion Fallback",
+                    "id": "ea4f5e97-9044-462a-a5ad-b11412b9796b",
+                    "path": "QuaternionFallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Palm Rotation",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "f2a78226-ee2d-4cf3-821b-97121168c97e",
+                    "path": "<HandTrackingDevice>{RightHand}/palmRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Palm Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "f500d547-2a5b-437a-b263-8f22a8ce3900",
+                    "path": "<PalmPose>{RightHand}/palmRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Palm Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "third",
+                    "id": "aa8f1c0c-ccfa-4ec5-a39d-04cafca3ce75",
+                    "path": "<XRController>{RightHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Palm Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Vector 3 Fallback",
+                    "id": "25477f1c-7735-40e7-a6ab-46e26cb7d7fc",
+                    "path": "Vector3Fallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Palm Position",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "a3124a10-edef-4fbe-956a-e52385cdc862",
+                    "path": "<HandTrackingDevice>{RightHand}/palmPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Palm Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "49b001c7-7062-4417-b89d-b60872e5ebc9",
+                    "path": "<PalmPose>{RightHand}/palmPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Palm Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "third",
+                    "id": "0c086eb6-f73d-4850-b798-d32331e85efc",
+                    "path": "<XRController>{RightHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Palm Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "5241fe0d-de7c-47a2-b825-dc2458d19caf",
+                    "path": "<XRController>{RightHand}/device",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Device",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9b6a53a8-3210-4f9e-8d3a-93318ff749ed",
+                    "path": "<XRController>{RightHand}/pointer",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bb6d0fd8-855c-48c5-ba1e-107e0a101eec",
+                    "path": "<XRController>{RightHand}/pokePose",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Poke",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ef189e98-680b-478d-bcb8-f562db78cd8d",
+                    "path": "<XRController>{RightHand}/pinchPose",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pinch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "953cf84e-0520-4e24-be98-2e778998f96c",
+                    "path": "<XRController>{RightHand}/devicePose",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cc575648-b317-47b9-b049-6ff60a1714c3",
+                    "path": "<PalmPose>{RightHand}/pose",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Palm",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "RightHand Input",
+            "id": "8f59bdf2-b828-44ab-85b5-806a0bd7a212",
+            "actions": [
+                {
+                    "name": "Select",
+                    "type": "Button",
+                    "id": "c2b6b727-bc18-4459-855c-909e599f0354",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Select Value",
+                    "type": "Value",
+                    "id": "6de81123-fbda-43d1-be68-fdbd6d964f57",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Activate",
+                    "type": "Button",
+                    "id": "16a1a0d6-8f1e-4ad8-8fd9-95420cff13e8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Activate Value",
+                    "type": "Button",
+                    "id": "24040850-7fef-432d-ad95-f3d079f38f4a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "UI Press",
+                    "type": "Button",
+                    "id": "6bc94090-3dcd-45fa-88d7-f74f15cdd36a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "UI Press Value",
+                    "type": "Value",
+                    "id": "f7585c18-f80c-4eaa-9e59-b23b5ea11401",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "UI Scroll",
+                    "type": "Value",
+                    "id": "cd332765-8bba-4791-af57-21c10fdab199",
+                    "expectedControlType": "Vector2",
+                    "processors": "InvertVector2(invertY=false)",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotate Anchor",
+                    "type": "Value",
+                    "id": "83560e0d-9280-43d7-a985-5c5777e8e989",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Translate Anchor",
+                    "type": "Value",
+                    "id": "14ada3bb-d263-4818-8ad6-1e943d82a1eb",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Grasp",
+                    "type": "Button",
+                    "id": "f280f017-0b3c-4e91-a5a6-40e34042789e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Grasp Value",
+                    "type": "Value",
+                    "id": "6b89965e-414f-46ec-928b-6792b18b152a",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Haptic Device",
+                    "type": "PassThrough",
+                    "id": "0a9d0f18-2630-48db-964e-4069d95d7d34",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1baca462-35eb-4e60-9df5-d772ebffe6e6",
+                    "path": "<HandTrackingDevice>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6d847e83-594e-4229-9f2c-1460f5c6aa0a",
+                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eb215233-3937-40a6-a6f1-2924c1249e11",
+                    "path": "<XRController>{RightHand}/selectPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cabcbff0-cf25-4729-b40c-695f43898750",
+                    "path": "<HandInteraction>{RightHand}/pinchValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7af1f9ad-ef35-4b6e-8bb1-5e3ef22c942f",
+                    "path": "<XRController>{RightHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2894de75-0215-43c7-9f2f-0092c167dd17",
+                    "path": "<XRController>{RightHand}/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "93e7efde-13d2-42c7-b498-8efca104f762",
+                    "path": "<HandInteraction>{RightHand}/pinchValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e9793db7-d1cd-4b7f-961c-ae7abad09324",
+                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Activate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "477e8ac9-887d-4fb7-bf99-466e956305cc",
+                    "path": "<XRController>{RightHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Activate Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2e0414d6-6a7f-4d32-b0b3-a81a91f965ee",
+                    "path": "<HandTrackingDevice>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UI Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "92c440b6-ba92-4b44-b2e5-7f0106088cb9",
+                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UI Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7a0df17b-c808-4a11-a6c6-6bfa6022ccf0",
+                    "path": "<XRController>{RightHand}/selectPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UI Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b1455d0d-19b6-4622-909e-632241e760bd",
+                    "path": "<XRController>{RightHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UI Press Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4758c515-875b-405c-8293-51256ccc1ee0",
+                    "path": "<XRController>{RightHand}/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UI Press Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7fad816c-e3a9-4c96-a9d6-f0aa6db34fcc",
+                    "path": "<XRController>{RightHand}/Primary2DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UI Scroll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "71fba35e-e27e-441a-ba29-6d451c78c073",
+                    "path": "<XRController>{RightHand}/Primary2DAxis",
+                    "interactions": "",
+                    "processors": "ScaleVector2(y=0),StickDeadzone",
+                    "groups": "",
+                    "action": "Rotate Anchor",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "50c55313-c861-4407-bbd5-81c9041174a5",
+                    "path": "<XRController>{RightHand}/Primary2DAxis",
+                    "interactions": "",
+                    "processors": "ScaleVector2(x=0),StickDeadzone",
+                    "groups": "",
+                    "action": "Translate Anchor",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "589132c1-50e0-4fd4-abd4-3e1acdbbf2cc",
+                    "path": "<HandTrackingDevice>{RightHand}/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "beca4c97-8b67-4314-a755-46bc0948d60d",
+                    "path": "<XRController>{RighttHand}/squeeze",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6cb3497c-0c03-4236-a545-e9cd939b90fc",
+                    "path": "<XRController>{RightHand}/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "120535ff-0f71-41f5-b744-ba0fc703e919",
+                    "path": "<HandInteraction>{RightHand}/graspValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "771297b2-230d-46f7-abba-98062b00e9bb",
+                    "path": "<HandTrackingDevice>{RightHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c9b17eb3-c080-4a58-9883-a57547bcbcc3",
+                    "path": "<XRController>{RightHand}/squeezePressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f4e0aecb-3c0d-4636-bedd-f19e9f0ac0ac",
+                    "path": "<XRController>{RightHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f6029c99-79c3-40b3-9a66-b9d319776ef3",
+                    "path": "<HandInteraction>{RightHand}/graspValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grasp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cc3a9ada-3791-4abf-b52e-bc0faa0c64b6",
+                    "path": "<XRController>{RightHand}/*",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Haptic Device",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3be755be-a8ae-4ca4-99f3-0d79108f2f0c",
+                    "path": "<HandInteraction>{RightHand}/pinchValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Activate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "be356f1f-7afd-48f9-ae54-e551ce505701",
+                    "path": "<HandInteraction>{RightHand}/pinchValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Activate Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cc7aa4d6-36bd-4101-96cf-b0643c84fd98",
+                    "path": "<HandInteraction>{RightHand}/pinchValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UI Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "64498909-6571-4ca9-8a39-283129142c2c",
+                    "path": "<HandInteraction>{RightHand}/pinchValue",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UI Press Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Gaze",
+            "id": "4fc9df2b-6181-40c2-882b-5f49295cb4ff",
+            "actions": [
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "350f9a16-b4ac-4e74-a0c3-7060b7572040",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotation",
+                    "type": "Value",
+                    "id": "81da298c-33c3-455b-8e45-2e7ba96d0499",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Is Tracked",
+                    "type": "Button",
+                    "id": "a06f2b83-9aa0-4ceb-af78-06e76c1d8d82",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Tracking State",
+                    "type": "Value",
+                    "id": "838de524-6734-4b69-a0e9-c6d36d4291c3",
+                    "expectedControlType": "Integer",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "Vector 3 Fallback",
+                    "id": "8d16e961-b32d-432c-bbf4-16fa12932caf",
+                    "path": "Vector3Fallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "998895c7-f8ab-4eca-8f49-a042eaf0180a",
+                    "path": "<EyeGaze>/pose/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "11aa1b43-5bd7-4fff-a2e9-ae50c38a4631",
+                    "path": "<XRHMD>/centerEyePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Quaternion Fallback",
+                    "id": "98a3d109-068a-45da-b7a7-cf929f7b384c",
+                    "path": "QuaternionFallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "fa50a309-402f-42c0-9d7c-79b4d4c69ade",
+                    "path": "<EyeGaze>/pose/rotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "1f0eb79b-8647-4827-b368-80567a49efe8",
+                    "path": "<XRHMD>/centerEyeRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Button Fallback",
+                    "id": "90c66544-e2d2-4f25-8719-33cb551312c9",
+                    "path": "ButtonFallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Is Tracked",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "ae2107de-ce73-4df4-a4d2-93d3ad8570fd",
+                    "path": "<EyeGaze>/pose/isTracked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Is Tracked",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "a7eec97f-51bf-4984-b858-3723dd68b464",
+                    "path": "<XRHMD>/isTracked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Is Tracked",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Integer Fallback",
+                    "id": "72088986-6d32-4a2e-b8c0-7582d6f9acee",
+                    "path": "IntegerFallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tracking State",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "92d1e287-a68a-45b7-a354-dae0e7e49825",
+                    "path": "<EyeGaze>/pose/trackingState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tracking State",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "ef6e9d5a-4fc1-4daf-b158-a543d8535172",
+                    "path": "<XRHMD>/trackingState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tracking State",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "UI",
+            "id": "a9f509fa-0d65-4f29-adf9-ddac1b26db1b",
+            "actions": [
+                {
+                    "name": "Navigate",
+                    "type": "PassThrough",
+                    "id": "bfc5289f-60fa-4d94-b518-350bcbe34357",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Submit",
+                    "type": "Button",
+                    "id": "6c833da5-7f1b-424c-b876-8d7ccf624b2c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Cancel",
+                    "type": "Button",
+                    "id": "70fc4f82-f8b8-447c-a5c6-f1e35205eb4e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Point",
+                    "type": "PassThrough",
+                    "id": "685f1e93-d525-4335-93df-404a72098af6",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Click",
+                    "type": "PassThrough",
+                    "id": "f86b043c-fc6e-4057-a783-27ea0fc554ce",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "ScrollWheel",
+                    "type": "PassThrough",
+                    "id": "9ea3f7a3-78ba-458a-8e97-49ac111e82c2",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MiddleClick",
+                    "type": "PassThrough",
+                    "id": "8cfa335f-9c7f-46a8-a644-3fb8942cebec",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RightClick",
+                    "type": "PassThrough",
+                    "id": "cf9d0f05-a99f-4142-8f4a-ff306e0fb338",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "0c5f7536-ecd4-46f6-ba75-d2df3015d88b",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Point",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9f42d8a8-a03f-4a73-81aa-dc533bf426c4",
+                    "path": "<Pen>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Point",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "523680bd-64c6-42d2-bb43-f824fa40f426",
+                    "path": "<Touchscreen>/touch*/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Point",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "48003608-1503-4f5a-a332-089c33625c35",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fdb3b1d0-52ef-44af-a318-ffcd9dc496db",
+                    "path": "<Pen>/tip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "00ca132b-438d-4cf1-86cf-5a8909aabe7e",
+                    "path": "<Mouse>/scroll",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ScrollWheel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e0a1007d-40d9-49f7-861b-38a07587be66",
+                    "path": "<Mouse>/middleButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MiddleClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "230fcd56-9423-407d-9404-f7389985101c",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Gamepad",
+                    "id": "05403ade-0961-49bd-b9a4-069758db39a1",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "80b0ebb3-803f-4367-b848-00a307e15f30",
+                    "path": "<Gamepad>/leftStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "up",
+                    "id": "d41ce29c-8bd5-44f0-afe2-46d8e4fc72ba",
+                    "path": "<Gamepad>/rightStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "083feb2f-e095-4d6b-a069-3df9ac8f41d4",
+                    "path": "<Gamepad>/leftStick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "69f5d41c-2d94-451f-97a0-02b3f1b026b2",
+                    "path": "<Gamepad>/rightStick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "f510c787-631a-44cf-90ce-940cae43929b",
+                    "path": "<Gamepad>/leftStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "99795955-889a-4733-9a52-5e3283877c1a",
+                    "path": "<Gamepad>/rightStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "748a28e7-2a8c-4f1d-acdb-cb4e9eab80da",
+                    "path": "<Gamepad>/leftStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "76a41b82-e86f-484e-ba68-81bbeeebc287",
+                    "path": "<Gamepad>/rightStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "53dc7d5c-1e7d-4fd0-bb62-b4c393cc0102",
+                    "path": "<Gamepad>/dpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Joystick",
+                    "id": "bef8f4ab-7942-4763-b33e-ddb88b1b467f",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "13dbe642-6264-461d-af1b-815d46472872",
+                    "path": "<Joystick>/stick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "17552994-8709-4af4-89a1-6157adb77fed",
+                    "path": "<Joystick>/stick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "39c2fbaa-c22f-4868-9429-43d0030ee63c",
+                    "path": "<Joystick>/stick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "e438ca30-6d3a-4b7d-8415-6ec463ebbe07",
+                    "path": "<Joystick>/stick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Keyboard",
+                    "id": "5503dfa1-7dab-4be2-8c78-0f5bfb5c945e",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "59af25fe-0962-4564-9c6b-292c5e9aa537",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "up",
+                    "id": "5592444f-3cec-47a7-8b61-2ad06aeca129",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "f71ab78f-ab22-49de-af8d-a692b5b2e16c",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "2d0063f9-f687-45e6-baa1-e4380defe33e",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "cc59a91a-9ff4-44fb-8ca4-50cf6c3afd55",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "daffd9ad-ad0b-4575-b127-41cee2be439e",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "5ac616dd-555e-4d56-a4aa-e1075c76e0c3",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "299262d0-0abd-44a4-8921-86a2f934e1c4",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "f28976ed-8b9b-465c-bfa5-65e9eba5f8ef",
+                    "path": "*/{Submit}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9c119b5a-6a9c-45fc-bba2-c4789faa9aa2",
+                    "path": "*/{Cancel}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "64aa891f-ed55-44ae-9e20-c063124a34f0",
+                    "path": "<Touchscreen>/touch*/click",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Pointer",
+            "id": "3888dcd4-6c2c-4779-bcf4-e864841a88ec",
+            "actions": [
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "d6ae4967-332e-421c-a01e-02ea4e72a74b",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotation",
+                    "type": "Value",
+                    "id": "67845491-b5b9-49c1-971e-ba8f85108940",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Select",
+                    "type": "Button",
+                    "id": "4f155d12-d3d2-4e00-b88a-3b2ff17b74ea",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PlaceAnchor",
+                    "type": "Button",
+                    "id": "583a7a44-a145-41d8-91fa-24ca8bf2ad3b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Menu",
+                    "type": "Button",
+                    "id": "c499d1d5-1d4e-46e6-b962-b5139ebf2de2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold(duration=2),Tap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Touchpad",
+                    "type": "Value",
+                    "id": "3213f495-727f-4eb5-b561-f099d485bec4",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Haptic",
+                    "type": "Value",
+                    "id": "049dc264-084a-4b0c-bb78-e29dbaa0c415",
+                    "expectedControlType": "Haptic",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "LeftControllerPrimaryButton",
+                    "type": "Button",
+                    "id": "44ab422d-bcb7-41f6-9ca8-4987108fd859",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RightControllerPrimaryButton",
+                    "type": "Button",
+                    "id": "de5d933c-8e00-4fa9-bfee-93a1e14eaa0f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PrimaryButton",
+                    "type": "Button",
+                    "id": "1dcd7d89-132e-4a70-8a55-7dd5966cd06d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Back",
+                    "type": "Button",
+                    "id": "e72c15ac-32d5-4158-ac9e-1631c8b8214e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "Vector 3 Fallback",
+                    "id": "20538109-3507-4e56-ad82-c7b83ba4e41d",
+                    "path": "Vector3Fallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "0d7f7ad2-841f-40e9-ab5e-8f45b8f1cabe",
+                    "path": "<WMRSpatialController>/pointerPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Quaternion Fallback",
+                    "id": "9acc5147-6ec0-435d-9302-1a50b5404679",
+                    "path": "QuaternionFallback",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "first",
+                    "id": "1f0942ab-fce7-4bb0-8608-b384511d1369",
+                    "path": "<WMRSpatialController>/pointerRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "second",
+                    "id": "9c9a33ab-ed7a-4aeb-85fa-f4b7108406fe",
+                    "path": "<XRController>{RightHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "985a079d-b78b-43df-aec7-ae0c5e83343d",
+                    "path": "<XRController>{LeftHand}/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "93f570ae-bf71-4183-901a-37c792c09e43",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d770b071-62f6-4bd5-adfb-83c1a30a3169",
+                    "path": "<KHRSimpleController>/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "066027c9-c54a-45ea-b1dd-f9659394a8a8",
+                    "path": "<WMRSpatialController>/touchpadClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a5c685f8-4d8c-4a78-be12-b781de564598",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9faabca9-970a-4deb-a983-9808c9ab18c0",
+                    "path": "<XRController>/touchpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Touchpad",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0f0f8954-9bfc-4307-ba46-389ed2346e1b",
+                    "path": "<XRController>/thumbstick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Touchpad",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4190b59d-946d-4487-9ee3-b4d376c0fa61",
+                    "path": "<WMRSpatialController>/haptic",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Haptic",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d9029907-8bb7-474d-a2f5-2748f03f4e71",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftControllerPrimaryButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4b2bbf68-edc8-43af-b280-329f9d351e30",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightControllerPrimaryButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fa9d6d60-645f-46e2-93f2-42822edf898c",
+                    "path": "<KHRSimpleController>/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PlaceAnchor",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "567838ec-31e4-4f90-95f4-8a39b81f29c0",
+                    "path": "<WMRSpatialController>/touchpadClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PlaceAnchor",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "186b3bac-94b7-4899-8305-3efbc9810bbe",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PlaceAnchor",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b4217dc1-d9ee-4afb-af78-087cd7ff477e",
+                    "path": "<XRController>/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PlaceAnchor",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "90fca3c7-bdd4-4500-9a06-9bf44514f76c",
+                    "path": "*/{Back}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Back",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bb243ee8-47e2-40d8-b1be-988053d3ac19",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PrimaryButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a6625641-0cf0-4903-8add-f3364f214771",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PrimaryButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

@@ -1,11 +1,14 @@
 {
   "dependencies": {
+    "com.qualcomm.qcht.unity.interactions": "file:Spaces/com.qualcomm.qcht.unity.interactions-4.1.7.tgz",
+    "com.qualcomm.snapdragon.spaces": "file:Spaces/com.qualcomm.snapdragon.spaces-0.23.2.tgz",
     "com.unity.collab-proxy": "2.5.2",
     "com.unity.feature.development": "1.0.1",
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.7.6",
     "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.9.4",
+    "com.unity.xr.openxr": "1.10.0",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
