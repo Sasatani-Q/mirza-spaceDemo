@@ -4,6 +4,8 @@
     "com.qualcomm.snapdragon.spaces": "file:Spaces/com.qualcomm.snapdragon.spaces-0.23.2.tgz",
     "com.unity.collab-proxy": "2.5.2",
     "com.unity.feature.development": "1.0.1",
+    "com.unity.nuget.newtonsoft-json": "3.2.1",
+    "com.unity.render-pipelines.universal": "14.0.11",
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.7.6",
     "com.unity.ugui": "1.0.0",
