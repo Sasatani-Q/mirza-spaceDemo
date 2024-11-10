@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Samples/Snapdragon Spaces/0.23.2/Fusion Samples/Scenes/PortraitUISampleScene.unity
+    guid: c14207df34b75c249ad492b04dc3886d
+  - enabled: 0
     path: Assets/Samples/QONOQ/Scenes/GPT Image Analyzer/GPT Image Analyzer.unity
     guid: 1e0eaf887257b4edfa40b4c24f09b149
   m_configObjects:

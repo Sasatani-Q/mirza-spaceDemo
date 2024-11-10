@@ -285,11 +285,11 @@ MonoBehaviour:
   priority: 0
   required: 1
   CheckInstalledRuntime: 1
-  LaunchAppOnViewer: 1
+  LaunchAppOnViewer: 0
   PreventSleepMode: 1
   ShowSplashScreenOnHost: 0
   ShowLaunchMessageOnHost: 0
-  LaunchControllerOnHost: 1
+  LaunchControllerOnHost: 0
   UseCustomController: 0
   ExportHeadless: 0
   AlternateStartActivity: 
@@ -832,7 +832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f547939d43e39c4da87271785d7b72e, type: 3}
   m_Name: FusionFeature Android
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: Dual Render Fusion (Experimental)
   version: 0.23.2
   featureIdInternal: com.qualcomm.snapdragon.spaces.fusion
@@ -840,7 +840,7 @@ MonoBehaviour:
   company: Qualcomm
   priority: 0
   required: 1
-  ValidateOpenScene: 1
+  ValidateOpenScene: 0
   SimulateFusionDevice: 1
 --- !u!114 &4769065593114480183
 MonoBehaviour:
